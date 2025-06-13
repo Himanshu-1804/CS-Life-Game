@@ -1183,7 +1183,7 @@ def make_status_bar(percentage, start_x, start_y, color) :
     length = 150
     width = 25
     status_bar.width(3)
-    status_bar.speed(1000)
+    status_bar.speed(5000)
     status_bar.penup()
     status_bar.setheading(0)
     status_bar.penup()
@@ -1215,6 +1215,7 @@ def make_status_bar(percentage, start_x, start_y, color) :
     text.hideturtle()
     text.goto(start_x - 10, start_y - ((4*width)/3))
     text.pencolor('white')
+    text.speed(5000)
     if color == "yellow" :
         text.write("Happiness", align = "right", font = ("Arial", 18, "bold"))
     if color == "red" :
